@@ -1,11 +1,11 @@
 # Policy Gradient
 - Objective
-$$
-\begin{align*}
+
+$$\begin{align*}
 J(\pi_\theta) &= \mathbb{E}_{\tau \sim \pi_\theta}[R(\tau)] \\
 &= \mathbb{E}_{\tau\sim\pi_\theta}\left[\sum^T_{t=0} \gamma^t r_t\right]
-\end{align*}
-$$
+\end{align*}$$
+
 - Policy Gradient
 $$\nabla_\theta J(\pi_\theta) = \mathbb{E}_{\tau \sim \pi_\theta}\left[\sum^T_{t=0} R_t(\tau)\nabla_\theta \log \pi_\theta(a_t|s_t)\right]$$
 
